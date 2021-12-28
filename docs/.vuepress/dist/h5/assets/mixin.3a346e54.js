@@ -1,0 +1,1 @@
+const e=()=>{},a=a=>({inject:{FieldTrack:{from:"FieldTrack",default:()=>e}},watch:{VModelValue(){this.FieldTrack({trigger:"onChange",value:this.VModelValue})}},created(){this.FieldTrack({type:a,value:this.VModelValue})}});export{a as F};

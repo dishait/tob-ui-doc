@@ -1,0 +1,1 @@
+const e={key:"v-5eda3f72",path:"/components/feedback/dialog.html",title:"\u5F39\u51FA\u6846",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/feedback/dialog/dialog"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/feedback/dialog.md"};export{e as data};

@@ -1,0 +1,1 @@
+<template>lg | md | sm | xs</template>

@@ -1,0 +1,1 @@
+<template>start | end | center | baseline | stretch</template>

@@ -1,0 +1,1 @@
+const t={key:"v-259dbf67",path:"/talking/components/",title:"\u7EC4\u4EF6",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1639554083e3},filePathRelative:"talking/components/index.md"};export{t as data};

@@ -1,0 +1,1 @@
+<template>row | col | row-reverse | col-reverse</template>

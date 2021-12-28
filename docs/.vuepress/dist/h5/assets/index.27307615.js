@@ -1,0 +1,1 @@
+import{f as a,q as r,g as e}from"./uni-app.es.03cc7760.js";var s={types:a,query:r,nanoid:(a=21,r="T")=>{let e="",s=a;for(;s--;)e+="useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict"[64*Math.random()|0];return r+e},cached:e};export{s as $};

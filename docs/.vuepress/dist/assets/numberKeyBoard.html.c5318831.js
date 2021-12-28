@@ -1,0 +1,1 @@
+const e={key:"v-54324bc4",path:"/components/form/numberKeyBoard.html",title:"\u6570\u5B57\u952E\u76D8",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/numberKeyBoard/numberKeyBoard"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/numberKeyBoard.md"};export{e as data};

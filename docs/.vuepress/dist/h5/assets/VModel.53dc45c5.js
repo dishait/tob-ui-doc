@@ -1,0 +1,1 @@
+import{$ as e}from"./uni-app.es.03cc7760.js";var t=(t={})=>{const{value:u}=t;return{emits:["input","update:modelValue"],props:e({modelValue:u}),computed:{VModelValue(){const{modelValue:e}=this;return e}},methods:{updateVModelValue(e){this.$emit("update:modelValue",e)}}}};export{t as V};

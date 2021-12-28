@@ -1,0 +1,1 @@
+const e={key:"v-b4220602",path:"/components/feedback/dropdownMenu.html",title:"\u4E0B\u62C9\u83DC\u5355",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/feedback/dropdownMenu/dropdownMenu"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/feedback/dropdownMenu.md"};export{e as data};
