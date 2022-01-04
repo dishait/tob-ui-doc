@@ -1483,6 +1483,16 @@ export function createApp() {
 <br />
 <br />
 
+
+## 单独 :package:
+
+当然该库与组件库是完全解耦的，所以你也可以使用单独的库 👉 [tob-less](https://tob-less.netlify.app/)
+
+<br />
+<br />
+<br />
+<br />
+
 ## 启发 :nerd_face:
 
 该库受以下技术启发
@@ -1491,3 +1501,6 @@ export function createApp() {
 - [Css 变量](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)
 - [Windicss](https://cn.windicss.org/)
 - [Tailwindcss](https://www.tailwindcss.cn/)
+
+<br />
+<br />

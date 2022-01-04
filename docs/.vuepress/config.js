@@ -81,7 +81,8 @@ module.exports = {
 					children: [
 						'/guide/design/index.md',
 						'/guide/design/style.md',
-						'/guide/design/presetsFirst.md'
+						'/guide/design/presetsFirst.md',
+						'/guide/design/color.md'
 					]
 				}
 			],

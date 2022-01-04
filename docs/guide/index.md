@@ -64,7 +64,7 @@
 <br />
 
 
-## 目前支持平台情况 :raised_eyebrow:
+## 目前支持哪些平台? :raised_eyebrow:
 
 :::tip 兼容仍需时间
 
