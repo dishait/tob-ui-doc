@@ -40,7 +40,7 @@ next:
 
 ## 构成 :monocle_face:
 
-从构成上，`Components` 将主要有以下五类组件
+从构成上，`Components` 将主要有以下六类组件
 
 1. **base** 基础
 2. **form** 表单

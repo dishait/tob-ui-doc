@@ -1,3 +1,6 @@
+---
+next: core/shouldCore
+---
 # 介绍
 
 :::tip 🧐 Talking?
@@ -23,24 +26,14 @@
 
 从构成上，`Talking` 将主要有以下四大模块
 
-1. **Components**
-
-   - 组件的一些 api 实现原理
-   - 组件未来的一些新 idea
-   - 过往抛弃的一些方案
-
-2. **Style**
-
-   - 书写样式的一些技巧
-
-3. **Script**
-
-   - 逻辑处理的一些技巧
-
-4. **Core**
-   - 核心库的实现原理
+1. 核心
+2. 样式
+3. 逻辑
+4. 组件
 
 
+<br />
+<br />
 <br />
 
 <div class="text-right">

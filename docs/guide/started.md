@@ -24,6 +24,7 @@ next:
 这里需要安装 `less 插件`，具体可见 👉 [安装less插件](/guide/design/style/#安装-less-插件)
 
 关于样式库更多说明可见 👉 [Design 样式库](/guide/design/style/)
+
 ```vue
 <!-- App.vue -->
 <style lang="less">

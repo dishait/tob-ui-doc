@@ -12,40 +12,9 @@ mobile: /h5/index.html#/pages/form/stepper/stepper
 
 <br />
 
-### 原色
+### 颜色
 
-让 `light` 为 `false`，并设置 `color` 即可
-
-```vue
-<template>
-	<view>
-		<t-stepper v-model="value" :light="false" color="primary" />
-		<t-stepper v-model="value" :light="false" color="secondary" />
-		<t-stepper v-model="value" :light="false" color="accent" />
-		<t-stepper v-model="value" :light="false" color="neutral" />
-		<t-stepper v-model="value" :light="false" color="base" />
-		<t-stepper v-model="value" :light="false" color="info" />
-		<t-stepper v-model="value" :light="false" color="success" />
-		<t-stepper v-model="value" :light="false" color="warning" />
-		<t-stepper v-model="value" :light="false" color="error" />
-	</view>
-</template>
-
-<script>
-    export default {
-        data() {
-            value: 0
-        }
-    }
-</script>
-```
-
-<br />
-<br />
-
-### 高亮
-
-设置 `color` 的即可， `light` 默认为 `true`
+设置 `color` 的即可
 
 ```vue
 <template>
@@ -59,37 +28,6 @@ mobile: /h5/index.html#/pages/form/stepper/stepper
 		<t-stepper v-model="value" color="success" />
 		<t-stepper v-model="value" color="warning" />
 		<t-stepper v-model="value" color="error" />
-	</view>
-</template>
-
-<script>
-    export default {
-        data() {
-            value: 0
-        }
-    }
-</script>
-```
-
-<br />
-<br />
-
-### 轮廓
-
-设置 `color` 的基础上，让 `outline` 为 `true` 即可
-
-```vue
-<template>
-	<view>
-		<t-stepper v-model="value" outline color="primary" />
-		<t-stepper v-model="value" outline color="secondary" />
-		<t-stepper v-model="value" outline color="accent" />
-		<t-stepper v-model="value" outline color="neutral" />
-		<t-stepper v-model="value" outline color="base" />
-		<t-stepper v-model="value" outline color="info" />
-		<t-stepper v-model="value" outline color="success" />
-		<t-stepper v-model="value" outline color="warning" />
-		<t-stepper v-model="value" outline color="error" />
 	</view>
 </template>
 

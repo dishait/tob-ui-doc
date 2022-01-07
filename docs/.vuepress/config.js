@@ -161,6 +161,10 @@ module.exports = {
 				{
 					text: 'Talking',
 					children: ['/talking/index.md']
+				},
+				{
+					text: 'Core',
+					children: ['/talking/core/shouldCore.md']
 				}
 			]
 		}

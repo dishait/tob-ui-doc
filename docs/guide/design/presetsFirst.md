@@ -404,7 +404,7 @@ export default {
 
 该 `idea` 由以下技术启发:
 
-- [Windicss - Attributify-mode](https://windicss.org/features/attributify.html#attributify-mode)
+- [Windicss - Attributify-mode](https://cn.windicss.org/features/attributify.html#attributify-mode)
 
 <br />
 <br />
