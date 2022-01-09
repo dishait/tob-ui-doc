@@ -1,6 +1,7 @@
 const { path } = require('@vuepress/utils')
 
 module.exports = {
+	base: './',
 	lang: 'zh-CN',
 	open: true,
 	title: 'tob ui',
