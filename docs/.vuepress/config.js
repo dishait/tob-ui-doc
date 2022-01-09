@@ -15,7 +15,9 @@ module.exports = {
 		'/h5': path.resolve(__dirname, './public/h5'),
 		'@design': path.resolve(__dirname, '../../design')
 	},
-	head: [['link', { rel: 'icon', href: '/logo.png' }]],
+	head: [
+		['link', { rel: 'icon', href: '/tob-ui-doc/logo.png' }]
+	],
 	themePlugins: {
 		backToTop: true
 	},
@@ -63,11 +65,11 @@ module.exports = {
 			},
 			{
 				text: 'GitHub',
-				link: 'git'
+				link: 'https://github.com/dishait/tob-ui'
 			},
 			{
 				text: 'Gitee',
-				link: 'gitee'
+				link: 'https://gitee.com/dishait/tob-ui'
 			}
 		],
 		sidebarDepth: 10,

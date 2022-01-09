@@ -4,9 +4,9 @@ tob ui 说明文档
 
 <br />
 
-## 在线链接
+## 在线
 
-👉 [tob-ui-doc](https://tob-ui.netlify.app/)
+👉 [tob-ui-doc](https://dishait.gitee.io/tob-ui-doc)
 
 <br />
 
