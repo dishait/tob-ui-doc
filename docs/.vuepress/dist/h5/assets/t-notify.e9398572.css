@@ -1,1 +1,0 @@
-.t-notify[data-v-3e1ad2fc]{display:flex;position:fixed;width:100%;opacity:0;color:rgba(var(--white),var(--text-opacity, 1));align-items:center;justify-content:center;top:0;padding-top:var(--status-bar-height);height:44px;transform:translateY(-100%);will-change:transform;transition:all .2s ease-in-out}.notify-show[data-v-3e1ad2fc]{opacity:1;transform:translateY(0)}

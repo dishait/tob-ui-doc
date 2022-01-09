@@ -1,1 +1,0 @@
-const t={key:"v-51cd56cc",path:"/components/form/switch.html",title:"\u5F00\u5173",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/switch/switch"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/switch.md"};export{t as data};

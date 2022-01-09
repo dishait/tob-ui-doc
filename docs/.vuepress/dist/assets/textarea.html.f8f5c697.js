@@ -1,1 +1,0 @@
-const t={key:"v-7124c1d8",path:"/components/form/textarea.html",title:"\u6587\u672C\u533A",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/textarea/textarea"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/textarea.md"};export{t as data};

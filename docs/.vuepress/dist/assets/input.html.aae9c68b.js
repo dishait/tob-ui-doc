@@ -1,1 +1,0 @@
-const t={key:"v-7c282a3a",path:"/components/form/input.html",title:"\u8F93\u5165\u6846",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/input/input"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/input.md"};export{t as data};

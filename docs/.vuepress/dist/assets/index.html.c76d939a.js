@@ -1,0 +1,1 @@
+const e={key:"v-3bf29bc5",path:"/guide/design/",title:"\u4ECB\u7ECD",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u65B9\u5411 \u{1F914}",slug:"\u65B9\u5411",children:[]}],git:{updatedTime:1641306772e3},filePathRelative:"guide/design/index.md"};export{e as data};

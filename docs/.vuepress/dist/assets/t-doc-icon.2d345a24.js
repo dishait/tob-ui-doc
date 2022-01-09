@@ -1,1 +1,0 @@
-import{r as t,a as r,c,d as n,w as s,e}from"./app.6f0d6ab3.js";import{_ as a}from"./plugin-vue_export-helper.21dcd24c.js";const _={},d=e(" \u{1F449} "),l=e("\u56FE\u6807\u5217\u8868");function p(i,f){const o=t("router-link");return r(),c("div",null,[d,n(o,{to:"/"},{default:s(()=>[l]),_:1})])}var x=a(_,[["render",p]]);export{x as default};

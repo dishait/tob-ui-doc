@@ -1,1 +1,0 @@
-const t={key:"v-d843db6c",path:"/components/form/form.html",title:"\u8868\u5355",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/form/form"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/form.md"};export{t as data};

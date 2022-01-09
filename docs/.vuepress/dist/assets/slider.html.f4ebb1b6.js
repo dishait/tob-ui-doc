@@ -1,1 +1,0 @@
-const e={key:"v-54bb970d",path:"/components/form/slider.html",title:"\u6ED1\u5757",lang:"zh-CN",frontmatter:{layout:"TLayout",mobile:"/h5/index.html#/pages/form/slider/slider"},excerpt:"",headers:[],git:{updatedTime:1640095619e3},filePathRelative:"components/form/slider.md"};export{e as data};
