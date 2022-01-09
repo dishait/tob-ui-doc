@@ -119,7 +119,8 @@
 
 比如下边的按钮组件，在键入 color 时出现了 <t-tag>···</t-tag>，就代表 color 支持预设优先 。
 
-![预设优先提示](/guide/presetsFirstTip.png)
+<img :src="$withBase('/guide/presetsFirstTip.png')" alt="预设优先提示">
+
 
 :::warning 三个点
 注意支持 class 注入的配置是三个点而不是四个点，四个点的配置要看参数的类型以及具体要求。

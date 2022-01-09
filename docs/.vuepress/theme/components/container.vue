@@ -18,7 +18,12 @@ const height = computed(() => {
 
 <template>
     <div class="container">
-        <iframe id="iframe" :src="src" frameborder="0" :style="{ height: `calc(100vh - 25px)` }" />
+        <iframe
+            id="iframe"
+            :src="$withBase(src)"
+            frameborder="0"
+            :style="{ height: `calc(100vh - 25px)` }"
+        />
     </div>
 </template>
 

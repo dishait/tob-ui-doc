@@ -8,7 +8,7 @@ defineProps({
 
 <template>
     <div class="text-center">
-        <img :src="url" :alt="alt" class="h-30 w-30" />
+        <img :src="$withBase(url)" :alt="alt" class="h-30 w-30" />
         <div class="mt-1 text-base text-lg">{{ text }}</div>
     </div>
 </template>

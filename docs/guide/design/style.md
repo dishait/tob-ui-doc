@@ -235,7 +235,8 @@ PS:  该样式库也正为 UI 中所有的组件提供支持！
 
 2. 稍旧一点的版本的 <t-tag color="success"> HbuilderX </t-tag> 需要前往 [插件市场 - less编译](https://ext.dcloud.net.cn/plugin?id=2031) 手动安装插件。
 
-![install-plugin](/guide/install-plugin.png)
+<img :src="$withBase('/guide/install-plugin.png')" alt="install-plugin">
+
 
 <br />
 <br />

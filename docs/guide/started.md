@@ -78,11 +78,12 @@ next:
 
 在 `template` 模板中输入 `<t-` 即可得到组件的提示
 
-![模板提示](/template-tips.png)
+<img :src="$withBase('/template-tips.png')" alt="模板提示">
 
 同时在使用组件的 `props` 时也有对应的 `props` 提示
 
-![props提示](/code-tips.png)
+<img :src="$withBase('/code-tips.png')" alt="props提示">
+
 
 <br />
 <br />
