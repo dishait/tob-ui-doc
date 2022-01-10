@@ -43,7 +43,7 @@ mobile: /h5/index.html#/pages/feedback/overlay/overlay
 
 ### 插槽
 
-直接嵌入你想要的内容即可，当然这里更推荐你使用 [弹出层](/components/base/popup/) 组件
+直接嵌入你想要的内容即可，当然这里更推荐你使用 [弹出层](/tob-ui-doc/components/base/popup/) 组件
 
 ```vue{8}
 <template>

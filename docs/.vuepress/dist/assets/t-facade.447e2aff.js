@@ -1,1 +1,0 @@
-import{a,b as c,e,t as l}from"./app.68324ee7.js";const r={class:"text-center"},n=["src","alt"],i={class:"mt-1 text-base text-lg"},u={props:{alt:String,url:String,text:String},setup(t){return(s,o)=>(a(),c("div",r,[e("img",{src:s.$withBase(t.url),alt:t.alt,class:"h-30 w-30"},null,8,n),e("div",i,l(t.text),1)]))}};export{u as default};

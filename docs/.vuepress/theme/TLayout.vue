@@ -42,12 +42,12 @@ const navbarHeight = computed(() => {
 
 <style>
 .layout > .navbar {
-    position: static !important;
+    position: fixed !important;
 }
 
 .layout > .sidebar {
     --navbar-height: v-bind(navbarHeight);
-    transition-property: right, width;
+    transition-property: all 0.2s ease-in-out;
 }
 
 @media (min-width: 1000px) {
@@ -55,6 +55,17 @@ const navbarHeight = computed(() => {
         width: 2.2rem !important;
         height: 2.2rem !important;
         right: 23rem !important;
+    }
+
+    .layout > .sidebar {
+        --navbar-height: v-bind(navbarHeight);
+        transition-property: right, width;
+    }
+}
+
+@media (min-width: 720px) {
+    .layout > .navbar {
+        position: static !important;
     }
 }
 </style>

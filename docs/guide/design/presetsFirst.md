@@ -6,8 +6,8 @@
 # 预设优先
 
 :::warning 前置知识
-本篇文章需要你已经了解 [Design 样式库](/guide/design/style/) 的知识。  
-如果你对其不是很清楚，可以点击前往快速浏览一遍 👉 [Design 样式库](/guide/design/style/)
+本篇文章需要你已经了解 [Design 样式库](/tob-ui-doc/guide/design/style/) 的知识。  
+如果你对其不是很清楚，可以点击前往快速浏览一遍 👉 [Design 样式库](/tob-ui-doc/guide/design/style/)
 :::
 
 :::tip 一切都是为了魔改
@@ -210,7 +210,7 @@ export default {
 
 ### 颜色
 
-如果你详细看了 [Design 样式库-颜色-最佳实践](/guide/design/style/#最佳实践)，就知道一个好看的配色需要写太多 <t-tag>原子css</t-tag> 了，所以我将实践中的三种颜色搭配整合成更简单的应用方式。
+如果你详细看了 [Design 样式库-颜色-最佳实践](/tob-ui-doc/guide/design/style/#最佳实践)，就知道一个好看的配色需要写太多 <t-tag>原子css</t-tag> 了，所以我将实践中的三种颜色搭配整合成更简单的应用方式。
 
 `prop` 为 `color`，预设值如下:
 

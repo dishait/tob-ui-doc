@@ -7,8 +7,8 @@ next:
 # 介绍
 
 :::warning 前置知识
-本栏目需要你已经了解 [起步](/guide/started/) 与 [Design 预设优先](/guide/design/presetsFirst/) 的知识。  
-如果你对其不是很清楚，可以点击前往快速浏览一遍 👉 [起步](/guide/started/) 与 👉 [Design 预设优先](/guide/design/presetsFirst/)
+本栏目需要你已经了解 [起步](/tob-ui-doc/guide/started/) 与 [Design 预设优先](/tob-ui-doc/guide/design/presetsFirst/) 的知识。  
+如果你对其不是很清楚，可以点击前往快速浏览一遍 👉 [起步](/tob-ui-doc/guide/started/) 与 👉 [Design 预设优先](/tob-ui-doc/guide/design/presetsFirst/)
 :::
 
 :::tip 🤔 Components?

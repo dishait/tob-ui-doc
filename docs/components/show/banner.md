@@ -235,7 +235,7 @@ mobile: /h5/index.html#/pages/show/banner/banner
 |        size         |          尺寸          | string  | w-full h-full |
 | showMenuByLongpress |         {{t}}          | boolean |     false     |
 
-具体属性介绍可见 👉 [t-img 属性](/components/base/img/#属性) 与 👉 [t-img 原生支持](/components/base/img/#原生支持)
+具体属性介绍可见 👉 [t-img 属性](/tob-ui-doc/components/base/img/#属性) 与 👉 [t-img 原生支持](/tob-ui-doc/components/base/img/#原生支持)
 
 <br />
 <br />

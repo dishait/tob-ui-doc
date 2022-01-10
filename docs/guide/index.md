@@ -36,7 +36,7 @@
    - 更符合现代审美的设计 :point_right: ~~自我感觉的，勿喷 :grin:~~
 
 :::tip 👇 预设优先??
-[Design 预设优先](/guide/design/presetsFirst/)
+[Design 预设优先](/tob-ui-doc/guide/design/presetsFirst/)
 :::
 
 <br />

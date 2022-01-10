@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-accent mt-8 text-center text-lg text-white py-2 tip">Components 栏目建议使用宽屏的 web 查看</div>
+    <div class="bg-accent mt-20 text-center text-lg text-white py-2 tip">Components 栏目建议使用宽屏的 web 查看</div>
     <main class="page mobile">
       <div class="theme-default-content">
         <Content />

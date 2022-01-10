@@ -16,13 +16,13 @@
 从方向上，`Design` 将主要围绕以下三类内容
 
 1. **UI 提供的支持**
-   - [样式库](/guide/design/style/):carrot:
+   - [样式库](/tob-ui-doc/guide/design/style/):carrot:
 
 2. **组件的设计**
-   - [预设优先](/guide/design/presetsFirst/):mango:
+   - [预设优先](/tob-ui-doc/guide/design/presetsFirst/):mango:
   
 3. **设计参考**
-   - [颜色设计](/guide/design/color/):apple:
+   - [颜色设计](/tob-ui-doc/guide/design/color/):apple:
 
 
 <br />

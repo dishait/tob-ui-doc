@@ -386,7 +386,7 @@ t-card
 
 ### 卡片封面
 
-👉 [t-img 属性](/components/base/img/#属性)
+👉 [t-img 属性](/tob-ui-doc/components/base/img/#属性)
 
 <br />
 <br />
@@ -437,7 +437,7 @@ t-card
 
 ### 卡片封面
 
-👉 [t-img 事件](/components/base/img/#事件)
+👉 [t-img 事件](/tob-ui-doc/components/base/img/#事件)
 
 <br />
 <br />
