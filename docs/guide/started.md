@@ -12,11 +12,15 @@ next:
 
 `tob ui` 为 `HBuidlerx` 提供了第一优先级的支持。  
 
-所以直接在👉 [插件市场](https://ext.dcloud.net.cn/) 中 <t-tag color="accent" :light="false">使用 HBuidlerx 导入插件</t-tag> 即可。
+所以直接在👉 [插件市场](https://ext.dcloud.net.cn/plugin?name=tob-ui) 中 <t-tag color="accent" :light="false">使用 HBuidlerx 导入插件</t-tag> 即可。
+
+<img :src="$withBase('/guide/install-main-plugin.png')" alt="插件安装">
 
 <br />
 <br />
 <br />
+<br />
+
 
 ## 引入样式库 :monocle_face:
 `UI` 依赖一个样式库，所以要在 `App.vue` 中进行引入。 
