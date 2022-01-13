@@ -64,6 +64,10 @@ module.exports = {
 				link: '/talking/'
 			},
 			{
+				text: 'Ecosystem',
+				link: '/ecosystem/'
+			},
+			{
 				text: 'GitHub',
 				link: 'https://github.com/dishait/tob-ui'
 			},
@@ -168,6 +172,20 @@ module.exports = {
 				{
 					text: 'Core',
 					children: ['/talking/core/shouldCore.md']
+				}
+			],
+			'/ecosystem/': [
+				{
+					text: 'Ecosystem',
+					children: ['/ecosystem/index.md']
+				},
+				{
+					text: 'Uniapp',
+					children: ['/ecosystem/uniapp/lib.md']
+				},
+				{
+					text: 'Vue',
+					children: ['/ecosystem/vue/template.md']
 				}
 			]
 		}
