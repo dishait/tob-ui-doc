@@ -1,0 +1,1 @@
+import{a as e,b as t,F as a,e as r,i as c}from"./app.a10a9e6c.js";import{_ as n}from"./plugin-vue_export-helper.21dcd24c.js";const o={},s=r("div",null,"start | end | around | center |",-1),_=c("between | evenly ");function d(l,i){return e(),t(a,null,[s,_],64)}var f=n(o,[["render",d]]);export{f as default};
