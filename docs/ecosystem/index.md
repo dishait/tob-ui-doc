@@ -3,8 +3,8 @@ next: uniapp/lib
 ---
 # 介绍
 
-:::tip 🧐 Ecosystem?
-`Ecosystem` 是一个推荐栏目!!
+:::tip 🧐 what?
+这是一个推荐栏目!!
 :::
 
 <br />

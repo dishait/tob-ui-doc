@@ -60,11 +60,11 @@ module.exports = {
 				link: '/components/'
 			},
 			{
-				text: 'Talking',
+				text: '关于',
 				link: '/talking/'
 			},
 			{
-				text: 'Ecosystem',
+				text: '推荐',
 				link: '/ecosystem/'
 			},
 			{
