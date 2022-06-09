@@ -1,33 +1,889 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.33">
-    <style>
-      :root {
-        --c-bg: #fff;
-      }
-      html.dark {
-        --c-bg: #22272e;
-      }
-      html, body {
-        background-color: var(--c-bg);
-      }
-    </style>
-    <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1"
+		/>
+		<meta
+			name="generator"
+			content="VuePress 2.0.0-beta.33"
+		/>
+		<style>
+			:root {
+				--c-bg: #fff;
 			}
-    </script>
-    <link rel="icon" href="/tob-ui-doc/logo.png"><title>弹出层 | tob ui</title><meta name="description" content="tob ui 文档">
-    <link rel="modulepreload" href="/tob-ui-doc/assets/app.a10a9e6c.js"><link rel="modulepreload" href="/tob-ui-doc/assets/popup.html.369aa7fd.js"><link rel="modulepreload" href="/tob-ui-doc/assets/popup.html.33d3ef6c.js">
-    <link rel="stylesheet" href="/tob-ui-doc/assets/style.327b2059.css">
-  </head>
-  <body>
-    <div id="app"><!--[--><div class="theme-container layout" style="--sidebar-width:200px;180d3425:61px;"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/tob-ui-doc/" class=""><!----><span class="site-name can-hide">tob ui</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/tob-ui-doc/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/components/" class="router-link-active" aria-label="组件"><!--[--><!--]--> 组件 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/talking/" class="" aria-label="关于"><!--[--><!--]--> 关于 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/ecosystem/" class="" aria-label="推荐"><!--[--><!--]--> 推荐 <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/dishait/tob-ui" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://gitee.com/dishait/tob-ui" rel="noopener noreferrer" target="_blank" aria-label="Gitee"><!--[--><!--]--> Gitee <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="一天又过去了吗?"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" placeholder="Search" autocomplete="off" spellcheck="false" value><!----></form></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/tob-ui-doc/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/components/" class="router-link-active" aria-label="组件"><!--[--><!--]--> 组件 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/talking/" class="" aria-label="关于"><!--[--><!--]--> 关于 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tob-ui-doc/ecosystem/" class="" aria-label="推荐"><!--[--><!--]--> 推荐 <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/dishait/tob-ui" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://gitee.com/dishait/tob-ui" rel="noopener noreferrer" target="_blank" aria-label="Gitee"><!--[--><!--]--> Gitee <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p class="sidebar-item sidebar-heading">Components <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/" class="router-link-active sidebar-item" aria-label="介绍"><!--[--><!--]--> 介绍 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading active">基础 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/base/btn.html" class="sidebar-item" aria-label="按钮"><!--[--><!--]--> 按钮 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/base/cell.html" class="sidebar-item" aria-label="单元格"><!--[--><!--]--> 单元格 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/base/icon.html" class="sidebar-item" aria-label="图标"><!--[--><!--]--> 图标 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/base/img.html" class="sidebar-item" aria-label="图片"><!--[--><!--]--> 图片 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/base/layout.html" class="sidebar-item" aria-label="布局"><!--[--><!--]--> 布局 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="弹出层"><!--[--><!--]--> 弹出层 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#示例" class="router-link-active router-link-exact-active sidebar-item" aria-label="示例 🤔"><!--[--><!--]--> 示例 🤔 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#弹出位置" class="router-link-active router-link-exact-active sidebar-item" aria-label="弹出位置"><!--[--><!--]--> 弹出位置 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#关闭图标" class="router-link-active router-link-exact-active sidebar-item" aria-label="关闭图标"><!--[--><!--]--> 关闭图标 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#属性" class="router-link-active router-link-exact-active sidebar-item" aria-label="属性 🧐"><!--[--><!--]--> 属性 🧐 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#事件" class="router-link-active router-link-exact-active sidebar-item" aria-label="事件 🤓"><!--[--><!--]--> 事件 🤓 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/tob-ui-doc/components/base/popup.html#最佳实践" class="router-link-active router-link-exact-active sidebar-item" aria-label="最佳实践 😋"><!--[--><!--]--> 最佳实践 😋 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading">表单 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/form/input.html" class="sidebar-item" aria-label="输入框"><!--[--><!--]--> 输入框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/radio.html" class="sidebar-item" aria-label="单选框"><!--[--><!--]--> 单选框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/checkbox.html" class="sidebar-item" aria-label="复选框"><!--[--><!--]--> 复选框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/switch.html" class="sidebar-item" aria-label="开关"><!--[--><!--]--> 开关 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/textarea.html" class="sidebar-item" aria-label="文本区"><!--[--><!--]--> 文本区 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/stepper.html" class="sidebar-item" aria-label="步进器"><!--[--><!--]--> 步进器 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/slider.html" class="sidebar-item" aria-label="滑块"><!--[--><!--]--> 滑块 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/search.html" class="sidebar-item" aria-label="搜索框"><!--[--><!--]--> 搜索框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/numberKeyBoard.html" class="sidebar-item" aria-label="数字键盘"><!--[--><!--]--> 数字键盘 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/passwordInput.html" class="sidebar-item" aria-label="密码输入框"><!--[--><!--]--> 密码输入框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/form/form.html" class="sidebar-item" aria-label="表单"><!--[--><!--]--> 表单 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading">反馈 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/feedback/actionSheet.html" class="sidebar-item" aria-label="动作面板"><!--[--><!--]--> 动作面板 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/feedback/dialog.html" class="sidebar-item" aria-label="弹出框"><!--[--><!--]--> 弹出框 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/feedback/dropdownMenu.html" class="sidebar-item" aria-label="下拉菜单"><!--[--><!--]--> 下拉菜单 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/feedback/notify.html" class="sidebar-item" aria-label="通知"><!--[--><!--]--> 通知 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/feedback/overlay.html" class="sidebar-item" aria-label="遮罩"><!--[--><!--]--> 遮罩 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading">展示 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/show/pendant.html" class="sidebar-item" aria-label="挂件"><!--[--><!--]--> 挂件 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/collapse.html" class="sidebar-item" aria-label="折叠面板"><!--[--><!--]--> 折叠面板 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/divider.html" class="sidebar-item" aria-label="分割线"><!--[--><!--]--> 分割线 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/noticeBar.html" class="sidebar-item" aria-label="通知栏"><!--[--><!--]--> 通知栏 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/steps.html" class="sidebar-item" aria-label="步骤条"><!--[--><!--]--> 步骤条 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/tag.html" class="sidebar-item" aria-label="标签"><!--[--><!--]--> 标签 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/card.html" class="sidebar-item" aria-label="卡片"><!--[--><!--]--> 卡片 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/show/banner.html" class="sidebar-item" aria-label="轮播图"><!--[--><!--]--> 轮播图 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading">导航 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/navigation/link.html" class="sidebar-item" aria-label="链接"><!--[--><!--]--> 链接 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/navigation/breadcrumbs.html" class="sidebar-item" aria-label="面包屑"><!--[--><!--]--> 面包屑 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/navigation/grid.html" class="sidebar-item" aria-label="宫格"><!--[--><!--]--> 宫格 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/navigation/navBar.html" class="sidebar-item" aria-label="导航栏"><!--[--><!--]--> 导航栏 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/navigation/pagination.html" class="sidebar-item" aria-label="分页"><!--[--><!--]--> 分页 <!--[--><!--]--></a><!----></li><li><a href="/tob-ui-doc/components/navigation/menu.html" class="sidebar-item" aria-label="菜单"><!--[--><!--]--> 菜单 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><p class="sidebar-item sidebar-heading">其他 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/tob-ui-doc/components/others/backTop.html" class="sidebar-item" aria-label="回到顶部"><!--[--><!--]--> 回到顶部 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><div data-v-ce339a6e><div class="bg-accent mt-20 text-center text-lg text-white py-2 tip" data-v-ce339a6e>Components 栏目建议使用宽屏的 web 查看</div><main class="page mobile" data-v-ce339a6e><div class="theme-default-content" data-v-ce339a6e><!--[--><h1 id="弹出层" tabindex="-1"><a class="header-anchor" href="#弹出层" aria-hidden="true">#</a> 弹出层</h1><br><br><h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例" aria-hidden="true">#</a> 示例 🤔</h2><br><h3 id="弹出位置" tabindex="-1"><a class="header-anchor" href="#弹出位置" aria-hidden="true">#</a> 弹出位置</h3><p>将需要弹的内容放入 <code>t-popup</code> 内，</p><p>利用 <code>v-model</code> 去控制显示与隐藏，<code>mode</code> 控制弹出的位置。</p><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+			html.dark {
+				--c-bg: #22272e;
+			}
+			html,
+			body {
+				background-color: var(--c-bg);
+			}
+		</style>
+		<script>
+			const userMode = localStorage.getItem(
+				'vuepress-color-scheme'
+			)
+			const systemDarkMode =
+				window.matchMedia &&
+				window.matchMedia('(prefers-color-scheme: dark)')
+					.matches
+			if (
+				userMode === 'dark' ||
+				(userMode !== 'light' && systemDarkMode)
+			) {
+				document.documentElement.classList.toggle(
+					'dark',
+					true
+				)
+			}
+		</script>
+		<link rel="icon" href="/tob-ui-doc/logo.png" /><title
+			>弹出层 | tob ui</title
+		><meta name="description" content="tob ui 文档" />
+		<link
+			rel="modulepreload"
+			href="/tob-ui-doc/assets/app.a10a9e6c.js"
+		/><link
+			rel="modulepreload"
+			href="/tob-ui-doc/assets/popup.html.369aa7fd.js"
+		/><link
+			rel="modulepreload"
+			href="/tob-ui-doc/assets/popup.html.33d3ef6c.js"
+		/>
+		<link
+			rel="stylesheet"
+			href="/tob-ui-doc/assets/style.327b2059.css"
+		/>
+	</head>
+	<body>
+		<div id="app"
+			><!--[--><div
+				class="theme-container layout"
+				style="--sidebar-width: 200px; 180d3425: 61px"
+				><!--[--><header ref_key="navbar" class="navbar"
+					><div
+						class="toggle-sidebar-button"
+						title="toggle sidebar"
+						aria-expanded="false"
+						role="button"
+						tabindex="0"
+						><div class="icon" aria-hidden="true"
+							><span></span><span></span
+							><span></span></div></div
+					><span
+						><a href="/tob-ui-doc/" class=""
+							><!----><span class="site-name can-hide"
+								>tob ui</span
+							></a
+						></span
+					><div class="navbar-items-wrapper" style=""
+						><!--[--><!--]--><nav
+							class="navbar-items can-hide"
+							><!--[--><div class="navbar-item"
+								><a
+									href="/tob-ui-doc/guide/"
+									class=""
+									aria-label="指南"
+									><!--[--><!--]-->
+									指南
+									<!--[--><!--]--></a
+								></div
+							><div class="navbar-item"
+								><a
+									href="/tob-ui-doc/components/"
+									class="router-link-active"
+									aria-label="组件"
+									><!--[--><!--]-->
+									组件
+									<!--[--><!--]--></a
+								></div
+							><div class="navbar-item"
+								><a
+									href="/tob-ui-doc/talking/"
+									class=""
+									aria-label="关于"
+									><!--[--><!--]-->
+									关于
+									<!--[--><!--]--></a
+								></div
+							><div class="navbar-item"
+								><a
+									href="/tob-ui-doc/ecosystem/"
+									class=""
+									aria-label="推荐"
+									><!--[--><!--]-->
+									推荐
+									<!--[--><!--]--></a
+								></div
+							><div class="navbar-item"
+								><a
+									class="external-link"
+									href="https://github.com/dishait/tob-ui"
+									rel="noopener noreferrer"
+									target="_blank"
+									aria-label="GitHub"
+									><!--[--><!--]-->
+									GitHub
+									<span
+										><svg
+											class="external-link-icon"
+											xmlns="http://www.w3.org/2000/svg"
+											aria-hidden="true"
+											focusable="false"
+											x="0px"
+											y="0px"
+											viewbox="0 0 100 100"
+											width="15"
+											height="15"
+										>
+											<path
+												fill="currentColor"
+												d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+											></path>
+											<polygon
+												fill="currentColor"
+												points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+											></polygon></svg
+										><!--[--><span class="sr-only"
+											>open in new window</span
+										><!--]--></span
+									><!--[--><!--]--></a
+								></div
+							><div class="navbar-item"
+								><a
+									class="external-link"
+									href="https://gitee.com/dishait/tob-ui"
+									rel="noopener noreferrer"
+									target="_blank"
+									aria-label="Gitee"
+									><!--[--><!--]-->
+									Gitee
+									<span
+										><svg
+											class="external-link-icon"
+											xmlns="http://www.w3.org/2000/svg"
+											aria-hidden="true"
+											focusable="false"
+											x="0px"
+											y="0px"
+											viewbox="0 0 100 100"
+											width="15"
+											height="15"
+										>
+											<path
+												fill="currentColor"
+												d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+											></path>
+											<polygon
+												fill="currentColor"
+												points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+											></polygon></svg
+										><!--[--><span class="sr-only"
+											>open in new window</span
+										><!--]--></span
+									><!--[--><!--]--></a
+								></div
+							><!--]--></nav
+						><!--[--><!--]--><button
+							class="toggle-dark-button"
+							title="一天又过去了吗?"
+							><svg
+								style=""
+								class="icon"
+								focusable="false"
+								viewBox="0 0 32 32"
+							>
+								<path
+									d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M2 15.005h5v2H2z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M15 25.005h2v5h-2z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M25 15.005h5v2h-5z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z"
+									fill="currentColor"
+								></path>
+								<path
+									d="M15 2.005h2v5h-2z"
+									fill="currentColor"
+								></path></svg
+							><svg
+								style="display: none"
+								class="icon"
+								focusable="false"
+								viewBox="0 0 32 32"
+							>
+								<path
+									d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z"
+									fill="currentColor"
+								></path></svg></button
+						><form class="search-box" role="search"
+							><input
+								type="search"
+								placeholder="Search"
+								autocomplete="off"
+								spellcheck="false"
+								value
+							/><!----></form
+						></div
+					></header
+				><!--]--><div class="sidebar-mask"></div
+				><!--[--><aside class="sidebar"
+					><nav class="navbar-items"
+						><!--[--><div class="navbar-item"
+							><a
+								href="/tob-ui-doc/guide/"
+								class=""
+								aria-label="指南"
+								><!--[--><!--]-->
+								指南
+								<!--[--><!--]--></a
+							></div
+						><div class="navbar-item"
+							><a
+								href="/tob-ui-doc/components/"
+								class="router-link-active"
+								aria-label="组件"
+								><!--[--><!--]-->
+								组件
+								<!--[--><!--]--></a
+							></div
+						><div class="navbar-item"
+							><a
+								href="/tob-ui-doc/talking/"
+								class=""
+								aria-label="关于"
+								><!--[--><!--]-->
+								关于
+								<!--[--><!--]--></a
+							></div
+						><div class="navbar-item"
+							><a
+								href="/tob-ui-doc/ecosystem/"
+								class=""
+								aria-label="推荐"
+								><!--[--><!--]-->
+								推荐
+								<!--[--><!--]--></a
+							></div
+						><div class="navbar-item"
+							><a
+								class="external-link"
+								href="https://github.com/dishait/tob-ui"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="GitHub"
+								><!--[--><!--]-->
+								GitHub
+								<span
+									><svg
+										class="external-link-icon"
+										xmlns="http://www.w3.org/2000/svg"
+										aria-hidden="true"
+										focusable="false"
+										x="0px"
+										y="0px"
+										viewbox="0 0 100 100"
+										width="15"
+										height="15"
+									>
+										<path
+											fill="currentColor"
+											d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+										></path>
+										<polygon
+											fill="currentColor"
+											points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+										></polygon></svg
+									><!--[--><span class="sr-only"
+										>open in new window</span
+									><!--]--></span
+								><!--[--><!--]--></a
+							></div
+						><div class="navbar-item"
+							><a
+								class="external-link"
+								href="https://gitee.com/dishait/tob-ui"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Gitee"
+								><!--[--><!--]-->
+								Gitee
+								<span
+									><svg
+										class="external-link-icon"
+										xmlns="http://www.w3.org/2000/svg"
+										aria-hidden="true"
+										focusable="false"
+										x="0px"
+										y="0px"
+										viewbox="0 0 100 100"
+										width="15"
+										height="15"
+									>
+										<path
+											fill="currentColor"
+											d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+										></path>
+										<polygon
+											fill="currentColor"
+											points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+										></polygon></svg
+									><!--[--><span class="sr-only"
+										>open in new window</span
+									><!--]--></span
+								><!--[--><!--]--></a
+							></div
+						><!--]--></nav
+					><!--[--><!--]--><ul class="sidebar-items"
+						><!--[--><li
+							><p class="sidebar-item sidebar-heading"
+								>Components
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/"
+										class="router-link-active sidebar-item"
+										aria-label="介绍"
+										><!--[--><!--]-->
+										介绍
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p
+								class="sidebar-item sidebar-heading active"
+								>基础
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/base/btn.html"
+										class="sidebar-item"
+										aria-label="按钮"
+										><!--[--><!--]-->
+										按钮
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/base/cell.html"
+										class="sidebar-item"
+										aria-label="单元格"
+										><!--[--><!--]-->
+										单元格
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/base/icon.html"
+										class="sidebar-item"
+										aria-label="图标"
+										><!--[--><!--]-->
+										图标
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/base/img.html"
+										class="sidebar-item"
+										aria-label="图片"
+										><!--[--><!--]-->
+										图片
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/base/layout.html"
+										class="sidebar-item"
+										aria-label="布局"
+										><!--[--><!--]-->
+										布局
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										aria-current="page"
+										href="/tob-ui-doc/components/base/popup.html"
+										class="router-link-active router-link-exact-active router-link-active sidebar-item active"
+										aria-label="弹出层"
+										><!--[--><!--]-->
+										弹出层
+										<!--[--><!--]--></a
+									><!--[--><ul
+										style=""
+										class="sidebar-item-children"
+										><!--[--><li
+											><a
+												aria-current="page"
+												href="/tob-ui-doc/components/base/popup.html#示例"
+												class="router-link-active router-link-exact-active sidebar-item"
+												aria-label="示例 🤔"
+												><!--[--><!--]-->
+												示例 🤔
+												<!--[--><!--]--></a
+											><!--[--><ul
+												style=""
+												class="sidebar-item-children"
+												><!--[--><li
+													><a
+														aria-current="page"
+														href="/tob-ui-doc/components/base/popup.html#弹出位置"
+														class="router-link-active router-link-exact-active sidebar-item"
+														aria-label="弹出位置"
+														><!--[--><!--]-->
+														弹出位置
+														<!--[--><!--]--></a
+													><!----></li
+												><li
+													><a
+														aria-current="page"
+														href="/tob-ui-doc/components/base/popup.html#关闭图标"
+														class="router-link-active router-link-exact-active sidebar-item"
+														aria-label="关闭图标"
+														><!--[--><!--]-->
+														关闭图标
+														<!--[--><!--]--></a
+													><!----></li
+												><!--]--></ul
+											><!--]--></li
+										><li
+											><a
+												aria-current="page"
+												href="/tob-ui-doc/components/base/popup.html#属性"
+												class="router-link-active router-link-exact-active sidebar-item"
+												aria-label="属性 🧐"
+												><!--[--><!--]-->
+												属性 🧐
+												<!--[--><!--]--></a
+											><!----></li
+										><li
+											><a
+												aria-current="page"
+												href="/tob-ui-doc/components/base/popup.html#事件"
+												class="router-link-active router-link-exact-active sidebar-item"
+												aria-label="事件 🤓"
+												><!--[--><!--]-->
+												事件 🤓
+												<!--[--><!--]--></a
+											><!----></li
+										><li
+											><a
+												aria-current="page"
+												href="/tob-ui-doc/components/base/popup.html#最佳实践"
+												class="router-link-active router-link-exact-active sidebar-item"
+												aria-label="最佳实践 😋"
+												><!--[--><!--]-->
+												最佳实践 😋
+												<!--[--><!--]--></a
+											><!----></li
+										><!--]--></ul
+									><!--]--></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p class="sidebar-item sidebar-heading"
+								>表单
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/form/input.html"
+										class="sidebar-item"
+										aria-label="输入框"
+										><!--[--><!--]-->
+										输入框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/radio.html"
+										class="sidebar-item"
+										aria-label="单选框"
+										><!--[--><!--]-->
+										单选框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/checkbox.html"
+										class="sidebar-item"
+										aria-label="复选框"
+										><!--[--><!--]-->
+										复选框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/switch.html"
+										class="sidebar-item"
+										aria-label="开关"
+										><!--[--><!--]-->
+										开关
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/textarea.html"
+										class="sidebar-item"
+										aria-label="文本区"
+										><!--[--><!--]-->
+										文本区
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/stepper.html"
+										class="sidebar-item"
+										aria-label="步进器"
+										><!--[--><!--]-->
+										步进器
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/slider.html"
+										class="sidebar-item"
+										aria-label="滑块"
+										><!--[--><!--]-->
+										滑块
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/search.html"
+										class="sidebar-item"
+										aria-label="搜索框"
+										><!--[--><!--]-->
+										搜索框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/numberKeyBoard.html"
+										class="sidebar-item"
+										aria-label="数字键盘"
+										><!--[--><!--]-->
+										数字键盘
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/passwordInput.html"
+										class="sidebar-item"
+										aria-label="密码输入框"
+										><!--[--><!--]-->
+										密码输入框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/form/form.html"
+										class="sidebar-item"
+										aria-label="表单"
+										><!--[--><!--]-->
+										表单
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p class="sidebar-item sidebar-heading"
+								>反馈
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/feedback/actionSheet.html"
+										class="sidebar-item"
+										aria-label="动作面板"
+										><!--[--><!--]-->
+										动作面板
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/feedback/dialog.html"
+										class="sidebar-item"
+										aria-label="弹出框"
+										><!--[--><!--]-->
+										弹出框
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/feedback/dropdownMenu.html"
+										class="sidebar-item"
+										aria-label="下拉菜单"
+										><!--[--><!--]-->
+										下拉菜单
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/feedback/notify.html"
+										class="sidebar-item"
+										aria-label="通知"
+										><!--[--><!--]-->
+										通知
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/feedback/overlay.html"
+										class="sidebar-item"
+										aria-label="遮罩"
+										><!--[--><!--]-->
+										遮罩
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p class="sidebar-item sidebar-heading"
+								>展示
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/show/pendant.html"
+										class="sidebar-item"
+										aria-label="挂件"
+										><!--[--><!--]-->
+										挂件
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/collapse.html"
+										class="sidebar-item"
+										aria-label="折叠面板"
+										><!--[--><!--]-->
+										折叠面板
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/divider.html"
+										class="sidebar-item"
+										aria-label="分割线"
+										><!--[--><!--]-->
+										分割线
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/noticeBar.html"
+										class="sidebar-item"
+										aria-label="通知栏"
+										><!--[--><!--]-->
+										通知栏
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/steps.html"
+										class="sidebar-item"
+										aria-label="步骤条"
+										><!--[--><!--]-->
+										步骤条
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/tag.html"
+										class="sidebar-item"
+										aria-label="标签"
+										><!--[--><!--]-->
+										标签
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/card.html"
+										class="sidebar-item"
+										aria-label="卡片"
+										><!--[--><!--]-->
+										卡片
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/show/banner.html"
+										class="sidebar-item"
+										aria-label="轮播图"
+										><!--[--><!--]-->
+										轮播图
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p class="sidebar-item sidebar-heading"
+								>导航
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/navigation/link.html"
+										class="sidebar-item"
+										aria-label="链接"
+										><!--[--><!--]-->
+										链接
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/navigation/breadcrumbs.html"
+										class="sidebar-item"
+										aria-label="面包屑"
+										><!--[--><!--]-->
+										面包屑
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/navigation/grid.html"
+										class="sidebar-item"
+										aria-label="宫格"
+										><!--[--><!--]-->
+										宫格
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/navigation/navBar.html"
+										class="sidebar-item"
+										aria-label="导航栏"
+										><!--[--><!--]-->
+										导航栏
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/navigation/pagination.html"
+										class="sidebar-item"
+										aria-label="分页"
+										><!--[--><!--]-->
+										分页
+										<!--[--><!--]--></a
+									><!----></li
+								><li
+									><a
+										href="/tob-ui-doc/components/navigation/menu.html"
+										class="sidebar-item"
+										aria-label="菜单"
+										><!--[--><!--]-->
+										菜单
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><li
+							><p class="sidebar-item sidebar-heading"
+								>其他
+								<!----></p
+							><!--[--><ul
+								style=""
+								class="sidebar-item-children"
+								><!--[--><li
+									><a
+										href="/tob-ui-doc/components/others/backTop.html"
+										class="sidebar-item"
+										aria-label="回到顶部"
+										><!--[--><!--]-->
+										回到顶部
+										<!--[--><!--]--></a
+									><!----></li
+								><!--]--></ul
+							><!--]--></li
+						><!--]--></ul
+					><!--[--><!--]--></aside
+				><!--]--><!--[--><div data-v-ce339a6e
+					><div
+						class="bg-accent mt-20 text-center text-lg text-white py-2 tip"
+						data-v-ce339a6e
+						>Components 栏目建议使用宽屏的 web 查看</div
+					><main class="page mobile" data-v-ce339a6e
+						><div
+							class="theme-default-content"
+							data-v-ce339a6e
+							><!--[--><h1 id="弹出层" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#弹出层"
+									aria-hidden="true"
+									>#</a
+								>
+								弹出层</h1
+							><br /><br /><h2 id="示例" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#示例"
+									aria-hidden="true"
+									>#</a
+								>
+								示例 🤔</h2
+							><br /><h3 id="弹出位置" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#弹出位置"
+									aria-hidden="true"
+									>#</a
+								>
+								弹出位置</h3
+							><p
+								>将需要弹的内容放入
+								<code>t-popup</code> 内，</p
+							><p
+								>利用
+								<code>v-model</code> 去控制显示与隐藏，<code
+									>mode</code
+								>
+								控制弹出的位置。</p
+							><div class="language-vue ext-vue">
+								<pre
+									class="language-vue"
+								><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>t-cell-group</span> <span class="token attr-name">inset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mx-3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rounded</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>lg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>t-cell</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>居中<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>😃<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>open(<span class="token punctuation">&#39;</span>center<span class="token punctuation">&#39;</span>)<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>t-cell</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>左侧<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>👉<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>open(<span class="token punctuation">&#39;</span>left<span class="token punctuation">&#39;</span>)<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -68,7 +924,45 @@
     .justify-center<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><p><code>rounded</code> 可以控制弹出块的圆角，每个 <code>mode</code> 展示不同位置的圆角。以下是对应关系</p><ul><li>center 四周圆角</li><li>top 底部圆角</li><li>bottom 顶部圆角</li><li>left 右侧圆角</li><li>right 左侧圆角</li></ul><br><br><h3 id="关闭图标" tabindex="-1"><a class="header-anchor" href="#关闭图标" aria-hidden="true">#</a> 关闭图标</h3><p>可以通过 <code>closeIcon</code> 来设置关闭图标，图标的位置将跟随 <code>mode</code> 而改变。以下是对应关系</p><ul><li>center 右上角</li><li>bottom 右上角</li><li>left 右上角</li><li>right 左上角</li><li>top 左下角</li></ul><p>当然你也可以向 <code>closeIconPosition</code> 注入自定义位置的 <code>class</code></p><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token comment">&lt;!-- 使用的页面 --&gt;</span>
+</code></pre></div
+							><p
+								><code>rounded</code>
+								可以控制弹出块的圆角，每个
+								<code>mode</code>
+								展示不同位置的圆角。以下是对应关系</p
+							><ul
+								><li>center 四周圆角</li
+								><li>top 底部圆角</li
+								><li>bottom 顶部圆角</li
+								><li>left 右侧圆角</li
+								><li>right 左侧圆角</li></ul
+							><br /><br /><h3 id="关闭图标" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#关闭图标"
+									aria-hidden="true"
+									>#</a
+								>
+								关闭图标</h3
+							><p
+								>可以通过
+								<code>closeIcon</code>
+								来设置关闭图标，图标的位置将跟随
+								<code>mode</code> 而改变。以下是对应关系</p
+							><ul
+								><li>center 右上角</li
+								><li>bottom 右上角</li
+								><li>left 右上角</li
+								><li>right 左上角</li
+								><li>top 左下角</li></ul
+							><p
+								>当然你也可以向
+								<code>closeIconPosition</code>
+								注入自定义位置的 <code>class</code></p
+							><div class="language-vue ext-vue">
+								<pre
+									class="language-vue"
+								><code><span class="token comment">&lt;!-- 使用的页面 --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>t-cell-group</span> <span class="token attr-name">inset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mx-3<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rounded</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>lg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>t-cell</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>默认图标<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>😁<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>open(<span class="token punctuation">&#39;</span>close<span class="token punctuation">&#39;</span>)<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -112,7 +1006,11 @@
     .justify-center<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><div class="language-vue ext-vue"><pre class="language-vue"><code><span class="token comment">&lt;!-- App.vue --&gt;</span>
+</code></pre></div
+							><div class="language-vue ext-vue">
+								<pre
+									class="language-vue"
+								><code><span class="token comment">&lt;!-- App.vue --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
 <span class="token comment">/* 自定义的位置(popup) */</span>
 <span class="token selector">.custom-popup-close-position</span> <span class="token punctuation">{</span>
@@ -120,7 +1018,260 @@
 	<span class="token property">left</span><span class="token punctuation">:</span> 10rpx<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><div class="custom-container warning"><p class="custom-container-title">始终定义在全局</p><p>由于兼容性问题，你应该始终将这些需要注入到组件当中的自定义 <span class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md" data-v-a512d17a><!--[-->class<!--]--></span> 定义在全局的 <span class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md" data-v-a512d17a><!--[-->css<!--]--></span> 下，例如定义在 <span class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md" data-v-a512d17a><!--[-->App.vue<!--]--></span> 的 <span class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md" data-v-a512d17a><!--[-->style 标签<!--]--></span> 中。</p></div><br><br><br><h2 id="属性" tabindex="-1"><a class="header-anchor" href="#属性" aria-hidden="true">#</a> 属性 🧐</h2><table><thead><tr><th style="text-align:center;">属性</th><th style="text-align:center;">说明</th><th style="text-align:center;">类型</th><th style="text-align:center;">默认值</th><th style="text-align:center;">可选值</th></tr></thead><tbody><tr><td style="text-align:center;">v-model</td><td style="text-align:center;">显示隐藏</td><td style="text-align:center;">boolean</td><td style="text-align:center;"></td><td style="text-align:center;">true | false</td></tr><tr><td style="text-align:center;">closeIcon</td><td style="text-align:center;">关闭图标</td><td style="text-align:center;">string</td><td style="text-align:center;"></td><td style="text-align:center;"><div> 👉 <a href="/tob-ui-doc/components/base/icon/#图标列表" class="">图标列表</a></div></td></tr><tr><td style="text-align:center;">zIndex</td><td style="text-align:center;">层级</td><td style="text-align:center;">number</td><td style="text-align:center;">100</td><td style="text-align:center;"></td></tr><tr><td style="text-align:center;">applyStatusbar</td><td style="text-align:center;">应用状态栏</td><td style="text-align:center;">boolean</td><td style="text-align:center;">默认为true，只在top，left，right等模式下起效果</td><td style="text-align:center;">true | false</td></tr><tr><td style="text-align:center;">closeOnMaskClick</td><td style="text-align:center;">点击蒙版关闭</td><td style="text-align:center;">boolean</td><td style="text-align:center;">true</td><td style="text-align:center;">true | false</td></tr><tr><td style="text-align:center;">mode</td><td style="text-align:center;">模式</td><td style="text-align:center;">string</td><td style="text-align:center;">center</td><td style="text-align:center;">top | bottom | center | left | right</td></tr><tr><td style="text-align:center;">rounnded</td><td style="text-align:center;">圆角</td><td style="text-align:center;">string</td><td style="text-align:center;">none</td><td style="text-align:center;"><!--[--><div>full | 3xl | 2xl |</div><div>xl | lg | md | base | sm | none</div><!--]--></td></tr><tr><td style="text-align:center;">closeIconPosition</td><td style="text-align:center;">关闭图标位置</td><td style="text-align:center;">string</td><td style="text-align:center;">默认为空，不同模式不同位置</td><td style="text-align:center;"></td></tr></tbody></table><br><br><br><h2 id="事件" tabindex="-1"><a class="header-anchor" href="#事件" aria-hidden="true">#</a> 事件 🤓</h2><table><thead><tr><th style="text-align:center;">方法名</th><th style="text-align:center;">说明</th><th style="text-align:center;">参数</th></tr></thead><tbody><tr><td style="text-align:center;">click</td><td style="text-align:center;">点击事件</td><td style="text-align:center;">事件对象</td></tr><tr><td style="text-align:center;">maskClick</td><td style="text-align:center;">蒙版点击事件</td><td style="text-align:center;">事件对象</td></tr></tbody></table><br><br><br><h2 id="最佳实践" tabindex="-1"><a class="header-anchor" href="#最佳实践" aria-hidden="true">#</a> 最佳实践 😋</h2><p>在示例中，为了减轻大家的理解负担，我们只用了一个组件来承接不同的模式 <code>mode</code>。</p><p>但是如果你一个页面需要多个模式 <code>mode</code> 弹出组件，可以一个组件承接一个模式。这将使弹出有更好的效果，同时有更好的维护性。</p><br><br><br><!--]--></div><footer class="page-meta" data-v-ce339a6e><!----><div class="meta-item last-updated"><span class="meta-item-label">更新时间: </span><!----></div><!----></footer><nav class="page-nav" data-v-ce339a6e><p class="inner"><span class="prev"><a href="/tob-ui-doc/components/base/layout.html" class="" aria-label="布局"><!--[--><!--]--> 布局 <!--[--><!--]--></a></span><span class="next"><a href="/tob-ui-doc/components/form/input.html" class="" aria-label="输入框"><!--[--><!--]--> 输入框 <!--[--><!--]--></a></span></p></nav></main><div class="container" data-v-ce339a6e style="996df6fc:75px;" data-v-21643902><iframe id="iframe" src="/tob-ui-doc/h5/index.html#/pages/base/popup/popup" frameborder="0" style="height:calc(100vh - 25px);" data-v-21643902></iframe></div></div><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/tob-ui-doc/assets/app.a10a9e6c.js" defer></script>
-  </body>
+</code></pre></div
+							><div class="custom-container warning"
+								><p class="custom-container-title"
+									>始终定义在全局</p
+								><p
+									>由于兼容性问题，你应该始终将这些需要注入到组件当中的自定义
+									<span
+										class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md"
+										data-v-a512d17a
+										><!--[-->class<!--]--></span
+									>
+									定义在全局的
+									<span
+										class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md"
+										data-v-a512d17a
+										><!--[-->css<!--]--></span
+									>
+									下，例如定义在
+									<span
+										class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md"
+										data-v-a512d17a
+										><!--[-->App.vue<!--]--></span
+									>
+									的
+									<span
+										class="t-tag text-warning bg-warning bg-opacity-10 rounded shadow-none px-2 h-5 text-md"
+										data-v-a512d17a
+										><!--[-->style 标签<!--]--></span
+									>
+									中。</p
+								></div
+							><br /><br /><br /><h2 id="属性" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#属性"
+									aria-hidden="true"
+									>#</a
+								>
+								属性 🧐</h2
+							><table
+								><thead
+									><tr
+										><th style="text-align: center">属性</th
+										><th style="text-align: center">说明</th
+										><th style="text-align: center">类型</th
+										><th style="text-align: center"
+											>默认值</th
+										><th style="text-align: center"
+											>可选值</th
+										></tr
+									></thead
+								><tbody
+									><tr
+										><td style="text-align: center"
+											>v-model</td
+										><td style="text-align: center"
+											>显示隐藏</td
+										><td style="text-align: center"
+											>boolean</td
+										><td style="text-align: center"></td
+										><td style="text-align: center"
+											>true | false</td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>closeIcon</td
+										><td style="text-align: center"
+											>关闭图标</td
+										><td style="text-align: center"
+											>string</td
+										><td style="text-align: center"></td
+										><td style="text-align: center"
+											><div>
+												👉
+												<a
+													href="/tob-ui-doc/components/base/icon/#图标列表"
+													class=""
+													>图标列表</a
+												></div
+											></td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>zIndex</td
+										><td style="text-align: center">层级</td
+										><td style="text-align: center"
+											>number</td
+										><td style="text-align: center">100</td
+										><td
+											style="text-align: center"
+										></td></tr
+									><tr
+										><td style="text-align: center"
+											>applyStatusbar</td
+										><td style="text-align: center"
+											>应用状态栏</td
+										><td style="text-align: center"
+											>boolean</td
+										><td style="text-align: center"
+											>默认为true，只在top，left，right等模式下起效果</td
+										><td style="text-align: center"
+											>true | false</td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>closeOnMaskClick</td
+										><td style="text-align: center"
+											>点击蒙版关闭</td
+										><td style="text-align: center"
+											>boolean</td
+										><td style="text-align: center">true</td
+										><td style="text-align: center"
+											>true | false</td
+										></tr
+									><tr
+										><td style="text-align: center">mode</td
+										><td style="text-align: center">模式</td
+										><td style="text-align: center"
+											>string</td
+										><td style="text-align: center"
+											>center</td
+										><td style="text-align: center"
+											>top | bottom | center | left |
+											right</td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>rounded</td
+										><td style="text-align: center">圆角</td
+										><td style="text-align: center"
+											>string</td
+										><td style="text-align: center">none</td
+										><td style="text-align: center"
+											><!--[--><div>full | 3xl | 2xl |</div
+											><div
+												>xl | lg | md | base | sm |
+												none</div
+											><!--]--></td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>closeIconPosition</td
+										><td style="text-align: center"
+											>关闭图标位置</td
+										><td style="text-align: center"
+											>string</td
+										><td style="text-align: center"
+											>默认为空，不同模式不同位置</td
+										><td
+											style="text-align: center"
+										></td></tr></tbody></table
+							><br /><br /><br /><h2 id="事件" tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#事件"
+									aria-hidden="true"
+									>#</a
+								>
+								事件 🤓</h2
+							><table
+								><thead
+									><tr
+										><th style="text-align: center"
+											>方法名</th
+										><th style="text-align: center">说明</th
+										><th style="text-align: center"
+											>参数</th
+										></tr
+									></thead
+								><tbody
+									><tr
+										><td style="text-align: center"
+											>click</td
+										><td style="text-align: center"
+											>点击事件</td
+										><td style="text-align: center"
+											>事件对象</td
+										></tr
+									><tr
+										><td style="text-align: center"
+											>maskClick</td
+										><td style="text-align: center"
+											>蒙版点击事件</td
+										><td style="text-align: center"
+											>事件对象</td
+										></tr
+									></tbody
+								></table
+							><br /><br /><br /><h2
+								id="最佳实践"
+								tabindex="-1"
+								><a
+									class="header-anchor"
+									href="#最佳实践"
+									aria-hidden="true"
+									>#</a
+								>
+								最佳实践 😋</h2
+							><p
+								>在示例中，为了减轻大家的理解负担，我们只用了一个组件来承接不同的模式
+								<code>mode</code>。</p
+							><p
+								>但是如果你一个页面需要多个模式
+								<code>mode</code>
+								弹出组件，可以一个组件承接一个模式。这将使弹出有更好的效果，同时有更好的维护性。</p
+							><br /><br /><br /><!--]--></div
+						><footer class="page-meta" data-v-ce339a6e
+							><!----><div class="meta-item last-updated"
+								><span class="meta-item-label"
+									>更新时间: </span
+								><!----></div
+							><!----></footer
+						><nav class="page-nav" data-v-ce339a6e
+							><p class="inner"
+								><span class="prev"
+									><a
+										href="/tob-ui-doc/components/base/layout.html"
+										class=""
+										aria-label="布局"
+										><!--[--><!--]-->
+										布局
+										<!--[--><!--]--></a
+									></span
+								><span class="next"
+									><a
+										href="/tob-ui-doc/components/form/input.html"
+										class=""
+										aria-label="输入框"
+										><!--[--><!--]-->
+										输入框
+										<!--[--><!--]--></a
+									></span
+								></p
+							></nav
+						></main
+					><div
+						class="container"
+						data-v-ce339a6e
+						style="996df6fc: 75px"
+						data-v-21643902
+						><iframe
+							id="iframe"
+							src="/tob-ui-doc/h5/index.html#/pages/base/popup/popup"
+							frameborder="0"
+							style="height: calc(100vh - 25px)"
+							data-v-21643902
+						></iframe></div></div
+				><!--]--></div
+			><!----><!--]--></div
+		>
+		<script
+			type="module"
+			src="/tob-ui-doc/assets/app.a10a9e6c.js"
+			defer
+		></script>
+	</body>
 </html>
