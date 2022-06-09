@@ -378,17 +378,17 @@ t-grid
 
 ### 宫格项
 t-grid-item
-|   属性   |   说明   |  类型   | 默认值 |         可选值          |
-| :------: | :------: | :-----: | :----: | :---------------------: |
-|  color   |   颜色   | string  |        |     <t-doc-color />     |
-|  light   |   高亮   | boolean | false  |      <t-doc-boo />      |
-| outline  |   轮廓   | boolean | false  |      <t-doc-boo />      |
-|   size   |   尺寸   | string  |   md   |     <t-doc-size />      |
-| rounnded |   圆角   | string  |  base  |    <t-doc-rounded />    |
-|  shadow  |   阴影   | string  |  none  |    <t-doc-shadow />     |
-|   icon   |   图标   | string  |        |                         |
-|   text   |   文本   | string  |        |                         |
-|    to    | 跳转路径 | string  |        | `navigateTo` 支持的路径 |
+|  属性   |   说明   |  类型   | 默认值 |         可选值          |
+| :-----: | :------: | :-----: | :----: | :---------------------: |
+|  color  |   颜色   | string  |        |     <t-doc-color />     |
+|  light  |   高亮   | boolean | false  |      <t-doc-boo />      |
+| outline |   轮廓   | boolean | false  |      <t-doc-boo />      |
+|  size   |   尺寸   | string  |   md   |     <t-doc-size />      |
+| rounded |   圆角   | string  |  base  |    <t-doc-rounded />    |
+| shadow  |   阴影   | string  |  none  |    <t-doc-shadow />     |
+|  icon   |   图标   | string  |        |                         |
+|  text   |   文本   | string  |        |                         |
+|   to    | 跳转路径 | string  |        | `navigateTo` 支持的路径 |
 
 
 <br />

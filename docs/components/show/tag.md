@@ -185,7 +185,7 @@ mobile: /h5/index.html#/pages/show/tag/tag
 |   light   |   高亮   | boolean |    false     |   <t-doc-boo />   |
 |  outline  |   轮廓   | boolean |    false     |   <t-doc-boo />   |
 |   size    |   尺寸   | string  |      md      |  <t-doc-size />   |
-| rounnded  |   圆角   | string  |     base     | <t-doc-rounded /> |
+|  rounded  |   圆角   | string  |     base     | <t-doc-rounded /> |
 |  shadow   |   阴影   | string  |     none     | <t-doc-shadow />  |
 | closeable |  可关闭  | boolean |    false     |   <t-doc-boo />   |
 | leftIcon  | 左侧图标 | string  |              |  <t-doc-icon />   |

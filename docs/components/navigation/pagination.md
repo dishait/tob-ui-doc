@@ -178,7 +178,7 @@ mobile: /h5/index.html#/pages/navigation/pagination/pagination
 |  light   |      高亮      | boolean | false  |    <t-doc-boo />    |
 | outline  |      轮廓      | boolean | false  |    <t-doc-boo />    |
 |   size   |      尺寸      | string  |   md   |   <t-doc-size />    |
-| rounnded |      圆角      | string  |  base  |  <t-doc-rounded />  |
+| rounded  |      圆角      | string  |  base  |  <t-doc-rounded />  |
 |  shadow  |      阴影      | string  |  none  |  <t-doc-shadow />   |
 |  total   |    总记录数    | number  |   4    |        {{t}}        |
 | pageSize | 一次显示多少页 | number  |   4    | 3 \| 4 \| 5,  {{p}} |

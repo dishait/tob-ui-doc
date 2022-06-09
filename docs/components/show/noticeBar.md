@@ -257,7 +257,7 @@ mobile: /h5/index.html#/pages/show/noticeBar/noticeBar
 |   light    |   高亮   | boolean |    false     |   <t-doc-boo />   |
 |  outline   |   轮廓   | boolean |    false     |   <t-doc-boo />   |
 |    size    |   尺寸   | string  |      md      |  <t-doc-size />   |
-|  rounnded  |   圆角   | string  |     none     | <t-doc-rounded /> |
+|  rounded   |   圆角   | string  |     none     | <t-doc-rounded /> |
 |   shadow   |   阴影   | string  |     none     | <t-doc-shadow />  |
 | scrollable |  可滚动  | boolean |     true     |   <t-doc-boo />   |
 | closeable  |  可关闭  | boolean |    false     |   <t-doc-boo />   |

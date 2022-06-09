@@ -85,17 +85,17 @@ mobile: /h5/index.html#/pages/form/passwordInput/passwordInput
 
 ## 属性 :monocle_face:
 
-|   属性   |  说明  |  类型   | 默认值 |      可选值       |
-| :------: | :----: | :-----: | :----: | :---------------: |
-|  values  |   值   | string  |        |                   |
-|  color   |  颜色  | string  |  base  |  <t-doc-color />  |
-|   size   |  尺寸  | string  |   md   |  <t-doc-size />   |
-| rounnded |  圆角  | string  |  base  | <t-doc-rounded /> |
-|  shadow  |  阴影  | string  |  none  | <t-doc-shadow />  |
-|  length  |  长度  | number  |   5    |                   |
-|  focus   |  聚焦  | boolean |  true  |   <t-doc-boo />   |
-| visible  | 可见性 | boolean | false  |   <t-doc-boo />   |
-|  zIndex  |  层级  | number  |  100   |                   |
+|  属性   |  说明  |  类型   | 默认值 |      可选值       |
+| :-----: | :----: | :-----: | :----: | :---------------: |
+| values  |   值   | string  |        |                   |
+|  color  |  颜色  | string  |  base  |  <t-doc-color />  |
+|  size   |  尺寸  | string  |   md   |  <t-doc-size />   |
+| rounded |  圆角  | string  |  base  | <t-doc-rounded /> |
+| shadow  |  阴影  | string  |  none  | <t-doc-shadow />  |
+| length  |  长度  | number  |   5    |                   |
+|  focus  |  聚焦  | boolean |  true  |   <t-doc-boo />   |
+| visible | 可见性 | boolean | false  |   <t-doc-boo />   |
+| zIndex  |  层级  | number  |  100   |                   |
 
 <br />
 <br />

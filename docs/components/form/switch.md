@@ -146,7 +146,7 @@ mobile: /h5/index.html#/pages/form/switch/switch
 | v-model  | 开关状态(必填) | boolean |        |   <t-doc-boo />   |
 |  color   |      颜色      | string  |  base  |  <t-doc-color />  |
 |   size   |      尺寸      | string  |   md   |  <t-doc-size />   |
-| rounnded |      圆角      | string  |  base  | <t-doc-rounded /> |
+| rounded  |      圆角      | string  |  base  | <t-doc-rounded /> |
 | disabled |      禁用      | boolean | false  |   <t-doc-boo />   |
 
 <br />

@@ -139,7 +139,7 @@ mobile: /h5/index.html#/pages/form/input/input
 |   v-model   | 当前文本 | string  |            |                   |
 |    color    |   颜色   | string  |    base    |  <t-doc-color />  |
 |    size     |   尺寸   | string  |     md     |  <t-doc-size />   |
-|  rounnded   |   圆角   | string  |    base    | <t-doc-rounded /> |
+|   rounded   |   圆角   | string  |    base    | <t-doc-rounded /> |
 |  disabled   |   禁用   | boolean |   false    |   <t-doc-boo />   |
 | placeholder |  占位符  | string  |            |                   |
 |  maxlength  | 最大长度 | number  | -1，无限长 |                   |

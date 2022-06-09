@@ -201,12 +201,12 @@ const url = 'https://uniapp.dcloud.io/component/image'
 
 ## 属性 :monocle_face:
 
-|   属性   | 说明  |  类型  | 默认值 |      可选值       |
-| :------: | :---: | :----: | :----: | :---------------: |
-|   size   | 尺寸  | string |   md   |  <t-doc-size />   |
-| rounnded | 圆角  | string |  none  | <t-doc-rounded /> |
-|  shadow  | 阴影  | string |  none  | <t-doc-shadow />  |
-|  status  | 状态  | string |        | online \| offline |
+|  属性   | 说明  |  类型  | 默认值 |      可选值       |
+| :-----: | :---: | :----: | :----: | :---------------: |
+|  size   | 尺寸  | string |   md   |  <t-doc-size />   |
+| rounded | 圆角  | string |  none  | <t-doc-rounded /> |
+| shadow  | 阴影  | string |  none  | <t-doc-shadow />  |
+| status  | 状态  | string |        | online \| offline |
 
 <br />
 <br />

@@ -195,7 +195,7 @@ mobile: /h5/index.html#/pages/feedback/actionSheet/actionSheet
 
 |    属性    |   说明   |      类型       | 默认值 |      可选值       |
 | :--------: | :------: | :-------------: | :----: | :---------------: |
-|  rounnded  |   圆角   |     string      |   lg   | <t-doc-rounded /> |
+|  rounded   |   圆角   |     string      |   lg   | <t-doc-rounded /> |
 |   zIndex   |   层级   |     number      |  100   |                   |
 | cancelText | 取消文本 |     string      |        |                   |
 |    desc    | 面板描述 |     string      |        |                   |

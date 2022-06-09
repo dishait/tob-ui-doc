@@ -180,7 +180,7 @@ mobile: /h5/index.html#/pages/form/search/search
 |     light      |      高亮      | boolean |    false     |      <t-doc-boo />      |
 |    outline     |      轮廓      | boolean |    false     |      <t-doc-boo />      |
 |      size      |      尺寸      | string  |      md      |     <t-doc-size />      |
-|    rounnded    |      圆角      | string  |     base     |    <t-doc-rounded />    |
+|    rounded     |      圆角      | string  |     base     |    <t-doc-rounded />    |
 |     shadow     |      阴影      | string  |     none     |    <t-doc-shadow />     |
 |    leftIcon    |    左侧图标    | string  |    search    |     <t-doc-icon />      |
 |   clearIcon    |    清除图标    | string  | close-circle |     <t-doc-icon />      |

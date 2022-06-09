@@ -168,7 +168,7 @@ mobile: /h5/index.html#/pages/base/popup/popup
 |  applyStatusbar   |  应用状态栏  | boolean | {{a}}  |   <t-doc-boo />   |
 | closeOnMaskClick  | 点击蒙版关闭 | boolean |  true  |   <t-doc-boo />   |
 |       mode        |     模式     | string  | center |       {{m}}       |
-|     rounnded      |     圆角     | string  |  none  | <t-doc-rounded /> |
+|      rounded      |     圆角     | string  |  none  | <t-doc-rounded /> |
 | closeIconPosition | 关闭图标位置 | string  | {{cp}} |                   |
 
 

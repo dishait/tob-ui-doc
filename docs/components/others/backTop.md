@@ -72,17 +72,17 @@ const s = "默认为 50rpx，h5的tabbar页面请自行再加50px，即calc(50rp
 
 ## 属性 :monocle_face:
 
-|   属性   |   说明   |  类型   |  默认值  |               可选值               |
-| :------: | :------: | :-----: | :------: | :--------------------------------: |
-|  color   |   颜色   | string  |   base   |          <t-doc-color />           |
-|  light   |   高亮   | boolean |  false   |           <t-doc-boo />            |
-| outline  |   轮廓   | boolean |  false   |           <t-doc-boo />            |
-|   size   |   尺寸   | string  |    md    |           <t-doc-size />           |
-| rounnded |   圆角   | string  |   full   |         <t-doc-rounded />          |
-|  shadow  |   阴影   | string  |    sm    |          <t-doc-shadow />          |
-|  right   | 右侧距离 | string  |  50rpx   |                                    |
-|  bottom  | 底部距离 | string  |  {{s}}   | 50rpx \| calc(50rpx + 50px) \| ... |
-|   icon   |   图标   | string  | caret-up |           <t-doc-icon />           |
+|  属性   |   说明   |  类型   |  默认值  |               可选值               |
+| :-----: | :------: | :-----: | :------: | :--------------------------------: |
+|  color  |   颜色   | string  |   base   |          <t-doc-color />           |
+|  light  |   高亮   | boolean |  false   |           <t-doc-boo />            |
+| outline |   轮廓   | boolean |  false   |           <t-doc-boo />            |
+|  size   |   尺寸   | string  |    md    |           <t-doc-size />           |
+| rounded |   圆角   | string  |   full   |         <t-doc-rounded />          |
+| shadow  |   阴影   | string  |    sm    |          <t-doc-shadow />          |
+|  right  | 右侧距离 | string  |  50rpx   |                                    |
+| bottom  | 底部距离 | string  |  {{s}}   | 50rpx \| calc(50rpx + 50px) \| ... |
+|  icon   |   图标   | string  | caret-up |           <t-doc-icon />           |
 
 <br />
 <br />
